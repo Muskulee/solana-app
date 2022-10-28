@@ -9,6 +9,7 @@ import Transactions from "./components/Transactions";
 import Buy from "./components/Buy";
 import FAQ from "./components/Faq";
 import { COLORS } from "./general/colors";
+import Write from "./components/Write";
 // import IHome from "./components/Ihome";
 
 export default function App() {
@@ -51,7 +52,7 @@ export default function App() {
                 )}
               </button>
 
-              <SearchForm />
+              {/* <SearchForm /> */}
             </div>
           </div>
 
@@ -60,6 +61,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/buy" element={<Buy />} />
+              <Route path="/write" element={<Write />} />
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/faq" element={<FAQ />} />
 

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setErrorMessage } from "../redux/actions/errorAction";
 import ErrorComponents from "./smalls/ErrorComponents";
 
-function Home({ postBTNTitle }) {
+function Write({ postBTNTitle }) {
   const [busy, setBusy] = useState(false);
   const [address, setAddress] = useState("");
   const [balance, setBalance] = useState(0);
@@ -94,4 +94,4 @@ function Home({ postBTNTitle }) {
   );
 }
 
-export default Home;
+export default Write;
